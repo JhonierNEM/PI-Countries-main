@@ -9,7 +9,7 @@ import CreateActivity from './components/create-activity/CreateActivity.jsx'
 
 function App() {
   return (
-    <>
+    <div className='App'>
     <Switch>
 
       <Route exact path={'/'} render={()=><Welcome/>}/>
@@ -27,7 +27,7 @@ function App() {
       </>}/>
       <Route path={''} render={()=><h1>Error Page no Found</h1>}/>
     </Switch>
-    </>
+    </div>
   );
 }
 
