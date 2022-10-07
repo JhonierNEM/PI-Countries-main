@@ -1,0 +1,240 @@
+:root{
+    /*Colors*/
+    --primary-color:#0101DF;
+    --secondary-color:rgb(244, 239, 237);
+    --fund-color:#F2F2F2;
+    --error-color: rgb(204, 46, 46);
+    --border-color: gray;
+    --button-color:white;
+    --button-color-focus:rgb(222, 8, 8);
+    
+
+    /**/
+    --border-focus: 2px;
+
+}
+
+.createActivity{
+    background-color:white;
+    
+    display: flex;
+    
+    height: 86%;
+}
+
+    .containerForm{
+        background-color: var(--fund-color);
+        
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+        
+        padding: .5rem 5%;
+    }
+        .titleForm{
+        }
+            .titleForm h2{
+                margin: 0;
+                padding-bottom: 1rem;
+            }
+
+        .bodyForm{
+            
+        }
+            .form{
+                display: flex;
+                flex-direction: column;
+            }
+                .inputsGroup{
+                    display: flex;
+                    flex-direction: column;
+                    font-size: 14px;
+                    margin: 0.5rem 20%;
+                    
+                }
+                    .inputsGroup label{
+                        display: block;
+                        
+                        text-align: left;
+                        width: 100%;
+                    }
+                    .inputsGroup input{
+                        background-color: white;
+                        border: none;
+                        border-bottom:1px solid var(--border-color);
+                        font-size: 15px;
+                    }
+                    .inputsGroup input:focus{
+                        border: none;
+                        border-bottom: var(--border-focus) solid var(--primary-color);
+                        outline: none;
+                    }
+                    .inputsGroup select{
+                        background-color: white;
+                        border: none;
+                        border-bottom:1px solid var(--border-color);
+                        font-size: 15px;
+
+                        text-align: right;
+                    }
+
+                    .spanError{
+                        display: none;
+                    }
+                    .inputsGroup .time{
+                        display: flex;
+                        width: 100%;
+
+                    }
+                        .time input{
+                            flex: 2;
+                        }
+                        .time select{
+                            flex: 1;
+                            margin-left: .5rem;
+                        }
+
+
+                .searchCountry{
+                    display: flex;
+                    flex-direction: row;
+                    margin: 0.5rem 20%;
+                }
+                    .searchCountry label{
+                        font-size: 16px;
+                        margin-right: 4px;
+                        width:26%;
+
+                    }
+                    .searchCountry input{
+                        width:74%;
+                        background-color: white;
+                        border: none;
+                        border-bottom:1px solid var(--border-color);
+                        font-size: 15px;
+                    }
+                    .searchCountry input:focus{
+                        border: none;
+                        border-bottom: var(--border-focus) solid var(--primary-color);
+                        outline: none;
+                    }
+                .buttons{
+                    margin: 0.5rem 20%;
+                }
+                .buttons button{
+                    height: 1.5rem;
+                    width: 49%;
+                    margin-left: 1%;
+                }
+                
+                .countriesForm{
+                    background-color: var(--secondary-color);
+                    border-radius: .5rem;
+                    flex: 1;
+                    margin-top: .5rem;
+                    padding: .5rem 1rem;
+                    text-align: left;
+                    
+                }
+                .tag{
+                    background-color: darkgray;
+                    border-radius: .5rem;
+                    display: inline-block;
+                    margin-right: .5rem;
+                    margin-bottom: 0.5rem;           
+                }
+
+                .tag label{
+                    margin: .1rem 0.5rem;
+                }
+                .tag button{
+                    background: none;
+                    border: none;
+                    color: var(--color-error);
+                    margin: 0 .2rem .1rem 0;
+                }
+                .tag button{
+                    background: none;
+                    border: none;
+                    color:var(--button-color);
+                    margin: 0 .2rem .1rem 0;
+                }
+                .tag button:hover{
+                    color:var(--button-color-focus);
+                }
+                
+                
+                .activitiesAdded{
+                    flex: 1.5;
+                    background-color: var(--fund-color);
+                    padding: 1rem;
+                }
+                .table{
+                    width: 100%;
+                    box-shadow:0 5px 10px var(--primary-color);
+                    border-collapse: collapse;
+                }
+                    .table tr:nth-child(even){
+                        background-color: rgb(243, 243, 243);
+                    }
+                
+                .table .theader{
+                    background-color: white;
+                    text-transform: uppercase;
+                    box-shadow:0 5px 10px #ccc;
+                }
+                .theader tr{
+                    
+                }
+                .theader th{
+                    padding: 10px;
+                }
+
+            .table .tbody{}
+                .tbody tr{}
+                .tbody td{
+                    padding: 10px;
+                }
+                #listCountries{
+                    text-align: left;
+                }
+                #deleteActivity{
+                    width: 1rem;
+                }
+                    #deleteActivity button{
+                        background: none;
+                        margin: 0 .5rem 0 0;
+                        border: none;
+
+                        color:rgb(108, 41, 54);
+                    }
+                    #deleteActivity button:hover{
+                        color:var(--button-color-focus);
+                    } 
+.errorMsg{
+    display:block;
+    color: var(--error-color); 
+    text-align: left;
+}
+
+.msgAdded{
+    position:absolute;
+    bottom:2px;
+    right: 2px;
+    background-color: ghostwhite;
+    border-radius: 1rem;
+    color: darkgreen;
+    font-size: 14px;
+    
+
+    display: flex;
+    align-items: center;
+    width: 200px;
+}
+    .msgAdded img{
+        width: 35px;
+        height: 35px;
+    }
+.unmsgAdded{
+    display: none;
+}

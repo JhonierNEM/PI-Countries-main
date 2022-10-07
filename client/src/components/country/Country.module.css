@@ -1,0 +1,55 @@
+:root{
+    --primary-color: #0101DF
+}
+.country{
+    height:84%;
+    display: flex;
+}
+    .countryDetail{
+        flex: 1;
+        border-right: 1px solid grey;
+    }
+        .title{
+            width: 100%;
+        }
+            .title h1{
+                text-transform: uppercase;
+            }
+        .img{
+            background-color: var(--primary-color);
+            margin: 0 25%;
+
+        }
+            .img img{
+                width: 100%;
+            }
+        .attributes{
+            background-color: aqua;
+            margin: 0 25%;
+            text-align: left;
+        }
+            .attributes p{
+                margin: 0;
+                margin-left: 2rem;
+            }
+    .activities{
+        flex: 1;
+    }
+        .containerTable{
+            margin: 0 20%;
+        }
+            .table{
+                width: 100%;
+                box-shadow: 0 5px 10px gray;
+                border-collapse: collapse;
+            }
+                .table thead{
+                    text-transform: uppercase;
+                    box-shadow: 0 2px 5px gray;
+                }
+                    .table th, .table td{
+                        padding: 5px;
+                    }
+                    .table tr:nth-child(even){
+                        background-color: rgb(243, 243, 243);
+                    }

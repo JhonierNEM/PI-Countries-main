@@ -9,7 +9,8 @@ export default class Welcome extends Component{
         return(
             <div className={styles.welcome}>
                 <h2>Welcome To Countries App</h2>
-                <button onClick={()=>{
+                <button onClick={(e)=>{
+                    e.preventDefault();
                     window.location.href='/home'
                     console.log('hola')}}>Go!</button>
             </div>

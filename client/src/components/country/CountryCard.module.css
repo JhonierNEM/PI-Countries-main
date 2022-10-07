@@ -1,0 +1,22 @@
+.card{
+    background-color: yellow;
+    border: 1px solid black;
+    margin: .3rem;
+    max-width: 14rem ;
+    max-height: 10rem;
+    padding: .1rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 10rem;
+    width: 14rem ;
+}
+.image{
+    height: 70%;
+}
